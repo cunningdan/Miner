@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warcraft III Mining Simulator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center">
+        <h1>Warcraft III Mining Simulator</h1>
+    </header>
+    <main class="background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 ">
+                    <button class="btn bg-dark text-white" onclick="toolActivate(0)">
+                        <h6>Pickaxe upgrade</h6>
+                        <p id="displayPick"></p>
+                        <p>50 gold</p>
+                    </button>
+                    <button class="btn bg-dark text-white" onclick="passiveActivate(0)">
+                        <h6>Orc Peon</h6>
+                        <p id="displayPeon"></p>
+                        <p>100 gold</p>
+                    </button>
+                    <button class="btn bg-dark text-white" onclick="toolActivate(1)">
+                        <h6>Drill upgrade</h6>
+                        <p id="displayDrill"></p>
+                        <p>300 gold</p>
+                    </button>
+                    <button class="btn bg-dark text-white" onclick="passiveActivate(1)">
+                        <h6>Necrolyte</h6>
+                        <p id="displayNecrolyte"></p>
+                        <p>500 gold</p>
+                    </button>
+                    <button class="btn bg-dark text-white" onclick="toolActivate(2)">
+                        <h6>Laser Drill upgrade</h6>
+                        <p id="displayLaserDrill"></p>
+                        <p>1000g</p>
+                    </button>
+                    <button class="btn bg-dark text-white" onclick="passiveActivate(2)">
+                        <h6>Wisp</h6>
+                        <p id="displayWisp"></p>
+                        <p>5000g</p>
+                    </button>
+                </div>
+                <div class="col-4">
+                    <button class="btn" onmousedown="mine()">
+                        <img src="Gold_Mine_WC3.png" alt="">
+
+                    </button>
+                </div>
+                <div class="col-4 d-flex flex-column align-items-center">
+                    <h1 class="text-white">Inventory</h1>
+                    <h4 id="displayGold" class="text-white"></h4>
+                    <h4 id="displayRuby" class="text-white"></h4>
+                    <h4 id="displayDiamond" class="text-white"></h4>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

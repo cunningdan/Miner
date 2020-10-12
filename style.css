@@ -1,0 +1,10 @@
+  
+body { min-height: 100vh; display: flex; flex-direction: column; }
+header{ height: 7vh; } 
+main{flex-grow: 1;} 
+footer{ height: 7vh; }
+
+.background {
+    background-image: url(grass.png);
+    background-size: cover;
+}
